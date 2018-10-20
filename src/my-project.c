@@ -7,7 +7,10 @@
 /* Do stuff with a Blue Pill.
 
 Current setup:
-    No LEDs or anything. Toggle all I/Os to see if they all work 18 hi, 19-20 lo, 12-14 lo
+    No LEDs or anything. Toggle all I/Os to see if they all work.
+    Found that everything worked as expected, with the exception of the JTAG pins.
+    There's a register that can be set (AFIO_something?) that can disable the JTAG
+    or SWD pins as required.
 */
 
 uint32_t ctr1;
